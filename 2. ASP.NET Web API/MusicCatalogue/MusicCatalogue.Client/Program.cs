@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicCatalogue.Models;
+using System;
 
 namespace MusicCatalogue.Client
 {
@@ -58,10 +59,10 @@ namespace MusicCatalogue.Client
             //Album newAlbum = new Album();
             //newAlbum.Title = "Turbo hita na uetoto";
             //newAlbum.Year = 2013;
-            //newAlbum.Producer = "PK0007KC"
+            //newAlbum.Producer = "PK0007KC";
 
-            //albumsClient.UpdateAlbumRecord(1, null);
-            //albumsClient.AddToAlbum(newAlbum);
+            //albumsClient.UpdateAlbumRecord(1, newAlbum);
+            //albumsClient.AddToAlbums(newAlbum);
             //albumsClient.DeleteFromAlbum(19);
             #endregion
 
@@ -78,7 +79,7 @@ namespace MusicCatalogue.Client
             #endregion
 
             #region PUT, POST, DELETE Demost For Songs
-            SongsHttpClient songsClient = new SongsHttpClient("http://localhost:20098/", MediaTypeEnum.Xml);
+            //SongsHttpClient songsClient = new SongsHttpClient("http://localhost:20098/", MediaTypeEnum.Xml);
 
             //Song newSong = new Song();
             //newSong.Title = "Zlata pesen maina";
