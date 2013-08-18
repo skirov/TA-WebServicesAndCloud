@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pubnub - Demo</title>
+</head>
+
+<body>
+	<div 
+        pub-key="pub-c-40427e1d-7b94-4f2c-bde6-6c93636f2a6f" 
+        sub-key="sub-c-db9871f4-05e0-11e3-8dc9-02ee2ddab7fe" 
+        ssl="off" origin="pubsub.pubnub.com" id="pubnub"></div>
+    <script src="http://cdn.pubnub.com/pubnub-3.1.min.js"></script>
+    <script>
+        document.write("<h1>Listening for messages from Pubnub...</h1>")
+        PUBNUB.subscribe({
+            channel: "startCooking-channel", 
+            callback: function (message) { 
+                // Received a message --> print it in the page
+                document.write("<p>" + message + "</p>");
+            }
+        });
+    </script>
+</body>
+
+</html>
